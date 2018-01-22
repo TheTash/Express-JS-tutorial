@@ -1,7 +1,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>POST_Title | Node.js Blog</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
   <style>
     body {
@@ -14,9 +13,10 @@
   <div class="container">
     <%- include('partials/navbar') %>
     <div>
-      <p>by <a href="#">POST_AUTHOR</a></p>
+      <h2><%= title%></h2>
+      <p>by <a href="#"><%=author %></a></p>
 
-      <p>POST_CONTENT</p>
+      <p><%= body %></p>
       <hr>
     </div>
     <%- include('partials/footer') %>
